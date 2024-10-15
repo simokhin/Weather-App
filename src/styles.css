@@ -102,3 +102,30 @@ div span {
 .material-symbols-outlined {
   font-size: 4rem;
 }
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+footer a {
+  font-family: var(--Montserrat);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--header);
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+@media(max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+}
