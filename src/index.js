@@ -24,6 +24,19 @@ const apiKey = "HNA9QJ44F2YK8BRZ4CW6SLAY2";
 
 const searchField = document.querySelector("#search");
 
+searchField.addEventListener("keydown", (event) => {
+	if (event.key === "Enter") {
+    event.preventDefault();
+    let city = searchField.value;
+    let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}/?unitGroup=metric&key=${apiKey}`;
+
+    dataProcessing(url)
+  }
+  else {
+    return
+  }
+});
+
 searchField.addEventListener("change", (event) => {
 	event.preventDefault();
 
