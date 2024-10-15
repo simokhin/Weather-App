@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<title>Weather App</title>
+	<script defer src="main.js"></script></head>
+	<body>
+		<header>
+			<div class="title"><h1>Как тебе погода?</h1></div>
+		</header>
+		<main style="min-height: 100vh; margin-bottom: 3rem;">
+			<form>
+				<label for="search">Твой город</label>
+				<input type="search" id="search" name="search" />
+			</form>
+			<h2 id="city"></h2>
+			<div class="grid none">
+				<div class="temp">
+					<span class="material-symbols-outlined"> thermometer </span>Текущая
+					температура: <span id="temp"></span>
+				</div>
+				<div class="cloudcover">
+					<span class="material-symbols-outlined"> cloud </span> Облачность:
+					<span id="cloudcover"></span>
+				</div>
+				<div class="feelslike">
+					<span class="material-symbols-outlined"> clear_day </span>Ощущается
+					как: <span id="feelslike"></span>
+				</div>
+				<div class="windspeed">
+					<span class="material-symbols-outlined"> airwave </span>
+					Скорость ветра: <span id="windspeed"></span>
+				</div>
+				<div class="humidity">
+					<span class="material-symbols-outlined"> humidity_low </span
+					>Влажность: <span id="humidity"></span>
+				</div>
+				<div class="precip">
+					<span class="material-symbols-outlined"> rainy </span>Вероятность
+					осадков: <span id="precip"></span>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<a href="https://github.com/simokhin">GITHUB</a>
+		</footer>
+	</body>
+</html>
